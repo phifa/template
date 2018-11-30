@@ -1,0 +1,13 @@
+###################
+#### LIBRARIES ####
+###################
+
+<INCLUDE_TYPOSCRIPT: source="DIR: ../Library">
+
+
+#########################
+#### PAGE AND CONFIG ####
+#########################
+
+<INCLUDE_TYPOSCRIPT: source="FILE:../Page/config.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:../Page/page.typoscript">

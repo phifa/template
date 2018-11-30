@@ -1,0 +1,45 @@
+lib.form-searchbox = COA_INT
+lib.form-searchbox {
+    10 = COA
+    10 {
+        wrap = | </form>
+        # placeholder
+        5 = LOAD_REGISTER
+        5 {
+            placeholderSearch.cObject = TEXT
+            placeholderSearch.cObject {
+                data = LLL:typo3conf/ext/template/Resources/Private/Language/locallang.xlf:placeholder.search
+            }
+        }
+        10 = TEXT
+        10 {
+            typolink {
+                parameter  = 13
+                returnLast = url
+                additionalParams = &tx_indexedsearch_pi2[action]=search&tx_indexedsearch_pi2[controller]=Search 
+                useCacheHash = 1 
+            }
+            wrap = <form action="|" method="post" >
+        }
+        20 = COA
+        20 {
+            10 = TEXT
+            10 {
+                data = GPvar : tx_indexedsearch |sword
+                htmlSpecialChars = 1
+                wrap = <input name="tx_indexedsearch_pi2[search][sword]" value="|" placeholder="&nbsp; &#8981; {register:placeholderSearch}" type="search" class="top-bar__search" />
+                insertData = 1
+            }
+            20 = COA
+            20 {
+                wrap = <div> | </div>
+                10 = TEXT
+                10 {
+                    value (
+                      <input name="tx_indexedsearch_pi2[search][submitButton]" value="Search" type="hidden" class="" />
+                    )
+                }
+            }
+        }
+    }
+}

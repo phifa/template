@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="special_fullwidth">
+    <path id="Rechteck_1_Kopie_2" data-name="Rechteck 1 Kopie 2" class="cls-1" d="M809,754h60v59.99H809V754Z" transform="translate(-807 -752)"/>
+    <path id="Full_Kopie" data-name="Full Kopie" class="cls-2" d="M829.04,779.487v-0.893h-5.12v10.5h0.974v-4.768h3.838v-0.886h-3.838v-3.955h4.146Zm10.048-.893h-0.974v6.46q0,3.339-2.754,3.339a2.61,2.61,0,0,1-2.154-.857,4.043,4.043,0,0,1-.7-2.585v-6.357h-0.975v6.445q0,4.24,3.685,4.241,3.867,0,3.867-4.4v-6.284Zm8.385,10.5V788.21h-4.218v-9.616h-0.974v10.5h5.192Zm7.566,0V788.21H850.82v-9.616h-0.974v10.5h5.193Z" transform="translate(-807 -752)"/>
+  </g>
+</svg>

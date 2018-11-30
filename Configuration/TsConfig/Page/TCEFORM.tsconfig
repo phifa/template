@@ -1,0 +1,105 @@
+
+########################################################################################
+#
+#                                     TCEFORM
+#  Extra configuration for the form fields rendered by the TCEforms-class in general.
+#
+########################################################################################
+
+TCEFORM.pages {
+    # There is no need for the Alias field in page properties when we use RealURL
+    alias.disabled = 1
+    layout {
+        removeItems = 1,2,3
+        altLabels {
+            0  = Standard
+        }
+        addItems {
+        }
+    }
+}
+
+TCEFORM.tt_content {
+    header_layout {
+        altLabels.1 = H1
+        altLabels.2 = H2
+        altLabels.3 = H3
+        altLabels.4 = H4
+        altLabels.5 = H5
+        addItems {
+        }
+    }
+    subheader.disabled = 0
+    layout { 
+        disabled = 0
+        removeItems = 1,2,3        
+        altLabels {
+            0  = Standard            
+        }
+        addItems {
+        }
+    }
+    frame_class {
+        removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+        disabled = 0
+        altLabels {
+        }
+        addItems {
+        }
+    }
+    space_before_class {
+        disabled = 0
+        removeItems = extra-small, extra-large        
+        altLabels {
+        }
+        addItems {
+        }
+    }
+    space_after_class {
+        disabled = 0
+        removeItems = extra-small, extra-large        
+        altLabels {
+        }
+        addItems {
+        }
+    }
+    bullets_type {
+        addItems {
+        }
+    }
+    imageorient {
+        # Get rid of all float positioning for better responsive use
+        #removeItems = 0,1,2,8,9,10,17,18,25,26
+        removeItems = 0,1,8,9,17,18
+        addItems {
+        }
+        altLabels {
+            2 = Above
+            10 = Bottom
+        }
+        types {
+            image {
+            }
+            media {
+            }
+            textmedia {
+            }
+        }
+    }
+    uploads_type {
+        addItems {
+        }
+    }
+    bullets_type {
+        addItems {
+        }
+    }
+    
+    
+}
+
+
+
+
+
+

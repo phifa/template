@@ -1,0 +1,79 @@
+
+########################################################################################
+#
+#                                          mod
+#                            Options for the backend modules
+#
+########################################################################################
+<INCLUDE_TYPOSCRIPT: source="DIR:./BackendLayouts">
+
+
+
+mod.SHARED {
+    # Set the default label and flag
+    defaultLanguageFlag = de
+    defaultLanguagelabel = deutsch
+}
+
+# Web > Page
+mod.web_layout {
+    QEisDefault = 0
+    # Disables the search box located below the clipboard and other stuff
+    disableSearchBox = 1
+    disableBigButtons = 1
+    disableIconToolbar = 0
+
+    # Disable useless page module views
+    menu.function {
+        // Disable QuickEdit view. Does anyone actually use this confusing interface?
+        0 = 0
+        // Enable columns view
+        1 = 1
+        // Enable languages view (it will be hidden on sites without multiple languages)
+        2 = 1
+        // Disable page information view, which is next-to-useless and ought to be incorporated into the info module (or vice versa)
+        3 = 0
+        // Enable the grid view
+        4 = 1
+    }
+}
+
+# Web > List
+mod.web_list {
+    # Disable 'Create New Record' button
+    noCreateRecordsLink = 0
+
+    # Alle Tabellen zusammengeklappt darstellen
+    listOnlyInSingleTableView = 0
+
+    # Wizard Drag n Drop anstatt neues Element
+    newWizards = 0
+
+    # Disables the search box located below the clipboard
+    disableSearchBox = 1
+
+    # Immer die erweiterte Ansicht zeigen
+    enableDisplayBigControlPanel = activated
+
+    # Immer ClipBoard anzeigen
+    enableClipBoard = activated
+
+    # Determines whether the checkbox "Localization view" in the list module is shown or hidden.
+    enableLocalizationView = activated
+
+    # Hide records that are handled via relations or IRRE; add your own to the list.
+    hideTables =
+
+    # Make the list module behave sensibly. When people click on titles in lists, they expect to drill down to an edit view.
+    # Without this setting, page records in the list module respond to a click (by changing the selected page in the tree) and other
+    # records don't respond at all to clicks. This UI inconsistency is clever, but ill-advised, so we make clicks on any record
+    # in the list module lead to the edit view for that record.
+    clickTitleMode = edit
+}
+
+# Wizards
+mod.wizards {
+    # Show the content element wizard with tabs (for consistency)
+    newContentElement.renderMode = tabs
+}
+

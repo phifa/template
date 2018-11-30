@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #343434;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="page_33-33-33">
+    <path id="Rechteck_1_Kopie" data-name="Rechteck 1 Kopie" class="cls-1" d="M645,590h19v59.99H645V590Z" transform="translate(-643 -588)"/>
+    <path id="Rechteck_1_Kopie_3" data-name="Rechteck 1 Kopie 3" class="cls-1" d="M666,590h18v59.99H666V590Z" transform="translate(-643 -588)"/>
+    <path id="Rechteck_1_Kopie_4" data-name="Rechteck 1 Kopie 4" class="cls-1" d="M686,590h19v59.99H686V590Z" transform="translate(-643 -588)"/>
+  </g>
+</svg>

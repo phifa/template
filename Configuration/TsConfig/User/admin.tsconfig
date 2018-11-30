@@ -1,0 +1,127 @@
+
+########################################################################################
+#
+#                                       admPanel
+#                    Options regarding the frontend admin panel.
+#
+########################################################################################
+
+# Most users shouldn't see the admin panel, but they do want FE editing icons.
+# Hide the panel, show the icons.
+admPanel {
+  enable.edit = 1
+  hide = 1
+}
+
+########################################################################################
+#
+#                                       options
+#                         Options for the user, various
+#
+########################################################################################
+
+options {
+  pageTree {
+    disableIconLinkToContextmenu = 1
+    showNavTitle = 1
+    showDomainNameWithTitle = 1
+    showPageIdWithTitle = 1
+    disableIconLinkToContextmenu = titlelink
+  }
+  folderTree {
+    disableIconLinkToContextmenu = titlelink
+  }
+  file_list {
+    enableDisplayThumbnails = 1
+  }
+  workspaces {
+    previewLinkTTLHours = 128
+  }
+  shortcutFrame = 1
+  showHistory = 1
+  clearCache.system = 1
+  enableBookmarks = 1
+  # Let your users create folders in the extension browser.
+  createFoldersInEB = 1
+  # The view button is the bane of our existence. It assumes that records necessarily
+  # display on the page that contains them, which is _often_ not the case.
+  saveDocView = 0
+  # Enable upload-image-field in the element browser
+  uploadFieldsInTopOfEB = 0
+  # Enable create-folder-field in rte
+  createFoldersInEB = 1
+  # Useful for hiding some specific records
+  # In this case, 12 is the uid of the record you want to hide.
+  # We leave this here so we remember how to do this in case we need to on a project.
+  #hideRecords.[table] = 12
+}
+
+
+
+########################################################################################
+#
+#                                          mod
+#                Overriding values for the backend modules
+#
+########################################################################################
+
+
+
+########################################################################################
+#
+#                                         setup
+#	Default values and override values for the user settings known from the setup module
+#
+########################################################################################
+
+# ?
+setup.override.edit_docModuleUpload = 1
+
+########################################################################################
+#
+#                                        TCAdefaults
+#                            Sets default values for records
+#
+########################################################################################
+
+
+########################################################################################
+#
+#                                          user
+#                             This is for custom purposes.
+#
+########################################################################################
+
+
+########################################################################################
+#
+#                                           auth
+#                        Configuration for authentication services
+#
+########################################################################################
+
+
+########################################################################################
+#
+#                                         page
+#	 override  page TSconfig  by putting them into user TSconfig and prefixing with page
+#
+########################################################################################
+
+page {
+
+}
+
+########################################################################################
+#
+#                                      tx_[extension]
+#                      This is reserved space for extensions.
+#
+########################################################################################
+
+
+
+
+
+
+

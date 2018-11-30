@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-12T19:38:01Z" product-name="template">
+		<header/>
+		<body>
+			<trans-unit id="home" xml:space="preserve">
+				<source>Home</source>
+			</trans-unit>
+            <trans-unit id="placeholder.search" xml:space="preserve">
+				<source>Search</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

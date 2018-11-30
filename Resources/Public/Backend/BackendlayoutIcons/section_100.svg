@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b4b4b4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="section_100">
+    <path id="Rechteck_1_Kopie" data-name="Rechteck 1 Kopie" class="cls-1" d="M153.013,442H213v59.99h-59.99V442Z" transform="translate(-151 -440)"/>
+  </g>
+</svg>
