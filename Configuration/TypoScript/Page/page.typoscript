@@ -1,0 +1,232 @@
+page = PAGE
+page {
+    config {
+        # Page specific configuration overwrites template/config.typoscript
+        index_enable = 1
+        #disableBodyTag = 1
+    }
+    meta {
+        # Standard
+        description.field = description
+        description.ifEmpty = {$meta.description}
+        author.field = author
+        author.ifEmpty = {$meta.author}
+        viewport = width=device-width, initial-scale=1
+        revisit-after = 7 days
+        format-detection = telephone=no
+        format-detection = address=no
+        # Apple
+        apple-mobile-web-app-title.field = author
+        apple-mobile-web-app-title.ifEmpty = {$meta.author}
+        application-name.field = author
+        application-name.ifEmpty = {$meta.author}
+        # Microsoft
+        msapplication-TileColor = {$config.color}
+        msapplication-TileImage = {$path.test.favicons}mstile-150x150.png
+        msapplication-config = {$path.test.favicons}browserconfig.xml
+        theme-color = {$config.color}
+        # OpenGraph Tags
+        og:title {
+            attribute = property
+            field = title
+        }
+        og:site_name {
+            attribute = property
+            value = {$config.name}
+        }
+        og:description = {$page.meta.description}
+        og:description {
+            attribute = property
+            stdWrap.cObject = TEXT
+            stdWrap.cObject {
+                field = description
+                ifEmpty = {$meta.description}
+            }
+        }
+        og:image {
+            attribute = property
+            stdWrap.cObject = FILES
+            stdWrap.cObject {
+                references {
+                    data = levelfield:-1, media, slide
+                }
+                maxItems = 1
+                renderObj = COA
+                renderObj {
+                    10 = IMG_RESOURCE
+                    10 {
+                        file {
+                            import.data = file:current:uid
+                            treatIdAsReference = 1
+                            width = 1280c
+                            height = 720c
+                        }
+                        stdWrap {
+                            typolink {
+                                parameter.data = TSFE:lastImgResourceInfo|3
+                                returnLast = url
+                                forceAbsoluteUrl = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    includeCSS {
+        app = {$path.test.css}
+        app.async = 1
+    }
+
+    includeJSFooterlibs {
+        app = {$path.test.js}
+        app.async = 1
+    }
+
+    # Get the Open graph image from Resources
+    5 = LOAD_REGISTER
+    5 {
+        pageMedia.cObject = IMG_RESOURCE
+        pageMedia.cObject {
+            file {
+                import.data = levelmedia:-1, slide
+                treatIdAsReference = 1
+                import.listNum = 0
+                width = 1200c
+                height = 630c
+            }
+        }
+    }
+
+    # Page Template
+    10 = FLUIDTEMPLATE
+    10 {
+        templateRootPaths {
+            10 = {$path.default.templates}
+            20 = {$path.page.templates}
+            30 = {$path.test.templates}
+        }
+
+        partialRootPaths {
+            10 = {$path.default.partials}
+            20 = {$path.page.partials}
+            30 = {$path.test.partials}
+        }
+
+        layoutRootPaths {
+            10 = {$path.default.layouts}
+            20 = {$path.page.layouts}
+            30 = {$path.test.layouts}
+        }
+
+        templateName = TEXT
+        templateName.stdWrap.cObject = CASE
+        templateName.stdWrap.cObject {
+            # This line is not supported when using singlepage backend layouts. Keeping the old way in here.
+            #key.data = pagelayout
+            key.data            = levelfield:-1, backend_layout_next_level, slide
+            key.override.field  = backend_layout
+
+            # These two Background Layouts are needed for the Test Site + Kitchen Sink
+            default             = TEXT
+            default.value       = Test
+            pagets__section_100             = TEXT
+            pagets__section_100.value       = Section_100
+
+        }
+
+
+        variables {
+            # Helper Variables
+            varRootUid = TEXT
+            varRootUid.data = leveluid : 0
+            # Helper Paths
+            pathDist = TEXT
+            pathDist.value = {$path.test.dist}
+            # Company Information
+            configName = TEXT
+            configName.value = {$config.name}
+            # Google GTM Code
+            googleTagmanager = TEXT
+            googleTagmanager = {$google.tagManager}
+            # Google Analytics (needed for Optout)
+            universalAnalytics = TEXT
+            universalAnalytics = {$google.universalAnalytics}
+        }
+
+        dataProcessing {
+            # Menu Footer Test
+            1 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            1 {
+                special = directory
+                special.value = 2
+                expandAll = 1
+                as = menuFooterTest
+            }
+            # Menu Breadcrumbs Test
+            2 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            2 {
+                special = rootline
+                special.range = 1|-1
+                includeNotInMenu = 1
+                as = menuBreadcrumbsTest
+            }
+        }
+    }
+
+    headerData {
+
+        # Google Plus
+        10 = TEXT
+        10 {
+            value (
+                <meta itemprop="name" content="{$config.name}" />
+                <meta itemprop="description" content="{$meta.description}" />
+                <meta itemprop="image" content="{register:pageMedia}" />
+                <link rel="publisher" href="{$google.googleplusurl}" />
+            )
+            insertData = 1
+            if.isTrue = {$google.googleplusurl}
+        }
+
+        # Icons
+        20 = TEXT
+        20 {
+            value (
+                <link rel="apple-touch-icon" sizes="180x180" href="{$path.test.favicons}apple-touch-icon.png">
+                <link rel="icon" type="image/png" href="{$path.test.favicons}favicon-32x32.png" sizes="32x32">
+                <link rel="icon" type="image/png" href="{$path.test.favicons}favicon-16x16.png" sizes="16x16">
+                <link rel="manifest" href="{$path.test.favicons}manifest.json">
+                <link rel="mask-icon" href="{$path.test.favicons}safari-pinned-tab.svg" color="{$config.color}">
+                <meta name="theme-color" content="{$config.color}">
+                <link rel="shortcut icon" href="{$path.test.favicons}favicon.ico">
+            )
+        }
+
+        // Flip ahead browsing for IE10/11
+        30 = HMENU
+        30 {
+            special = browse
+            special {
+                items = prev|next
+            }
+            1 = TMENU
+            1.NO {
+                allWrap = <link rel="prev" href="|" /> |*| <link rel="next" href="|" />
+                doNotLinkIt = 1
+                stdWrap {
+                    typolink {
+                        parameter.data = field:uid
+                        useCacheHash = 1
+                        returnLast = url
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+}

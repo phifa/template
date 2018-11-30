@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1899/xhtml" lang="de" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Test" />
+<f:section name="Main">
+
+    <f:render section="ContainerOuterElement" contentAs="content" arguments="{_all}">
+        <div class="grid-x grid-margin-x">
+            <div class="{f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.content-dynamic\', data:{colPos: \'2\'})}', then: 'large-9 ', else: 'large-12' )} cell">
+                <main id="main">
+ 
+
+                    <f:if condition="{data.title}=='Kitchen Sink'">
+                        <f:then>
+                            <f:cObject typoscriptObjectPath="lib.content-singlepage" />
+                        </f:then>
+                        <f:else>
+                            <f:cObject typoscriptObjectPath="lib.content-dynamic" data="{colPos:1}" />
+                        </f:else>
+                    </f:if>
+                </main>
+            </div>
+            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.content-dynamic', data:{colPos: '2'} )}">
+                <div class="large-3 cell show-for-xlarge">
+                    <aside>
+                        <f:cObject typoscriptObjectPath="lib.content-dynamic" data="{colPos:2}" />
+                    </aside>
+                </div>
+            </f:if>
+        </div>
+    </f:render>
+
+</f:section>
+
+<f:section name="ContainerOuterElement">
+    <f:if condition="{data.title}=='Kitchen Sink'">
+        <f:then>
+            {content -> f:format.raw()}
+        </f:then>
+        <f:else>
+            <div class="grid-container">
+                {content -> f:format.raw()}
+            </div>
+        </f:else>
+    </f:if>
+</f:section>
+
+
+</html>

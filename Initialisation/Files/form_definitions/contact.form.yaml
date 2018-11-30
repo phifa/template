@@ -1,0 +1,70 @@
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: contact
+label: "Simple Contact Form"
+type: Form
+prototypeName: standard
+finishers:
+  - options:
+      pageUid: "16"
+      additionalParameters: ""
+    identifier: Redirect
+renderables:
+  - renderingOptions:
+      previousButtonLabel: "Previous step"
+      nextButtonLabel: "Next step"
+    identifier: page-1
+    label: ""
+    type: Page
+    renderables:
+      - defaultValue: ""
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+            required: required
+        identifier: name
+        label: Name
+        type: Text
+        validators:
+          - identifier: NotEmpty
+          - identifier: Alphanumeric
+      - defaultValue: ""
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+            required: required
+        identifier: subject
+        label: Subject
+        type: Text
+        validators:
+          - identifier: NotEmpty
+          - identifier: Alphanumeric
+      - defaultValue: ""
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: "E-Mail address"
+            required: required
+        identifier: email
+        label: E-Mail
+        type: Text
+        validators:
+          - identifier: NotEmpty
+          - identifier: EmailAddress
+      - defaultValue: ""
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Message
+            required: required
+        identifier: message
+        label: Message
+        type: Textarea
+        validators:
+          - identifier: NotEmpty
+      - type: Checkbox
+        identifier: checkbox-1
+        label: Agreement
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          - identifier: NotEmpty

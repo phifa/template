@@ -1,0 +1,80 @@
+
+# Do not change anything here, use the specific child extension's page.config-
+
+config {
+    # body tag gets disabled, for better flexibility, now in FLUID Partial (you could overwrite this in your page.config)
+    disableBodyTag = 1
+    # Page Title
+    noPageTitle = 0
+    doctype = html5
+    xmlprologue = none
+    xhtml_cleaning = all
+    disablePrefixComment = 1
+    meaningfulTempFilePrefix = 100
+    htmlTag_setParams = class="no-js"
+    pageRendererTemplateFile = typo3conf/ext/template/Resources/Private/Templates/System/PageRenderer.html
+    intTarget = {$styles.content.links.target}
+    extTarget = {$styles.content.links.extTarget}
+    index_enable = 1
+    index_externals = 1
+    frontend_editing = 1
+
+    # URL Stuff
+    absRefPrefix = auto
+    simulateStaticDocuments = 0
+
+    # JS/CSS // inline for page speed
+    removeDefaultJS = 0
+    removeDefaultCss = 0
+    inlineStyle2TempFile = 0
+
+    # Spam
+    spamProtectEmailAddresses = 1
+
+    # Links & content sharing across domains
+    typolinkEnableLinksAcrossDomains = 1
+    content_from_pid_allowOutsideDomain = 1
+
+    headerComment = {$config.headerComment}
+
+    # Language Config
+    sys_language_mode = strict
+    sys_language_overlay = hideNonTranslated
+    linkVars = L(0-9)
+
+}
+
+
+
+[applicationContext = Production*]
+    config {
+        debug = 0
+        admPanel = 0
+        no_cache = 0
+        sendCacheHeaders = 1
+        cache_period = 2592000
+        compressJs = 0
+        compressCss = 0
+        concatenateJs = 1
+        concatenateCss = 1
+        tx_realurl_enable = 1
+        sourceopt.enabled = 1
+        sourceopt.formatHtml = 1
+    }
+[global]
+
+[applicationContext = Development*, Production/Debug]
+    config {
+        debug = 1
+        admPanel = 1
+        no_cache = 1
+        sendCacheHeaders = 0
+        compressJs = 0
+        compressCss = 0
+        concatenateJs = 0
+        concatenateCss = 0
+        tx_realurl_enable = 0
+        sourceopt.enabled = 1
+        sourceopt.formatHtml = 4
+    }
+[global]

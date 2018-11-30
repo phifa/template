@@ -1,0 +1,29 @@
+#########################
+#### Singlepage      ####
+#########################
+lib.content-singlepage = COA
+lib.content-singlepage {
+    10 = HMENU
+    10 {
+        includeNotInMenu = 1
+        special = directory
+        1 = TMENU
+        1 {
+            expAll = 1
+            noBlur = 1
+            NO = 1
+            NO {
+                doNotLinkIt = 1
+                doNotShowLink = 1
+                stdWrap2 {
+                    cObject = COA
+                    cObject {
+                        # Get Page FLUID Template incl Backend Layouts
+                        20 =< page.10
+                    }
+                }
+                wrapItemAndSub = |
+            }
+        }
+    }
+}

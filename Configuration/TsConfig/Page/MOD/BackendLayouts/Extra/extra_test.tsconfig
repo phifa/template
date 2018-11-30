@@ -1,0 +1,37 @@
+################################
+#### BACKENDLAYOUT: DEFAULT ####
+################################
+mod {
+    web_layout {
+        BackendLayouts {
+            extra_test {
+                title = Extra: Test
+                config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 1
+                                        colspan = 2
+                                    }
+                                    2 {
+                                        name = Info
+                                        colPos = 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+                icon = EXT:template/Resources/Public/Backend/BackendlayoutIcons/extra_test.svg
+            }
+        }
+    }
+}
+
+

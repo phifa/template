@@ -1,0 +1,23 @@
+##############
+### PATHS  ###
+##############
+
+path {
+    test {
+        layouts     = typo3conf/ext/template/Resources/Private/Layouts/Test/
+        partials    = typo3conf/ext/template/Resources/Private/Partials/Test/
+        templates   = typo3conf/ext/template/Resources/Private/Templates/Test/
+        dist        = typo3conf/ext/template/Resources/Public/Test/dist/
+        favicons    = typo3conf/ext/template/Resources/Public/Test/dist/assets/favicons/
+        css         = typo3conf/ext/template/Resources/Public/Test/dist/assets/css/app.css
+        js          = typo3conf/ext/template/Resources/Public/Test/dist/assets/js/app.js
+    }
+    default {
+        layouts     = typo3conf/ext/template/Resources/Private/Layouts/Page/
+        partials    = typo3conf/ext/template/Resources/Private/Partials/Page/
+        templates   = typo3conf/ext/template/Resources/Private/Templates/Page/
+    }
+}
+
+
+

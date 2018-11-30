@@ -1,0 +1,61 @@
+<f:render partial="HeadBodyTagHelper" arguments="{_all}" />
+<div class="off-canvas-wrapper scene" id="page">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+            <f:link.page pageUid="{varRootUid}">
+                <img src="{pathDist}assets/img/logo.svg" class="logo">
+            </f:link.page>
+            <br>
+            <div class="menu-main">
+                <f:cObject typoscriptObjectPath="lib.menu-test" />
+            </div>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content {resourceBgImage}>
+            <div id="top"></div>
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <div class="grid-container">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell">
+                                <f:render partial="Breadcrumbs" arguments="{_all}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li>
+                            <f:cobject typoscriptObjectPath="lib.form-searchbox" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+                <div class="cell content">
+                    <div class="content__main scene__animated scene__animated--standard">
+                        <f:render section="Main" />
+                    </div>
+                    <footer class="content__footer">
+                        <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="small-6 cell">
+                                    <ul class="menu-footer">
+                                        <f:for each="{menuFooterTest}" as="menuItem">
+                                            <li>
+                                                <a href="{menuItem.link}">{menuItem.title}</a>
+                                            </li>
+                                        </f:for>
+                                    </ul>
+                                </div>
+                                <div class="small-6 cell text-right">
+                                    &copy;
+                                    <f:format.date format="Y">{data.tstamp}</f:format.date> &#183; {configName}
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

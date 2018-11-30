@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3RecordDocument>
+	<header type="array">
+		<XMLversion>1.0</XMLversion>
+		<meta type="array">
+			<title></title>
+			<description></description>
+			<notes></notes>
+			<packager_username>anonymous</packager_username>
+			<packager_name></packager_name>
+			<packager_email></packager_email>
+			<TYPO3_version>9.5.1</TYPO3_version>
+			<created>Thursday 29. November 2018</created>
+		</meta>
+		<static_tables index="relStaticTables" type="array"></static_tables>
+		<excludeMap type="array">
+			<item index="be_users:2">1</item>
+			<item index="be_users:1">1</item>
+		</excludeMap>
+		<softrefCfg type="array"></softrefCfg>
+		<extensionDependencies type="array"></extensionDependencies>
+		<charset>utf-8</charset>
+		<pagetree type="array">
+			<node index="0" type="array">
+				<uid>0</uid>
+				<node index="subrow" type="array">
+					<node index="1" type="array">
+						<uid>1</uid>
+						<node index="subrow" type="array">
+							<node index="5" type="array">
+								<uid>5</uid>
+							</node>
+							<node index="4" type="array">
+								<uid>4</uid>
+							</node>
+							<node index="2" type="array">
+								<uid>2</uid>
+								<node index="subrow" type="array">
+									<node index="3" type="array">
+										<uid>3</uid>
+									</node>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</pagetree>
+		<records type="array">
+			<table index="be_groups" type="array">
+				<rec index="16" type="array">
+					<uid>16</uid>
+					<pid>0</pid>
+					<title>[ROLE] Editor (Abstract)</title>
+					<relations index="rels" type="array">
+						<element index="be_groups:8" type="array">
+							<id>8</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:12" type="array">
+							<id>12</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:11" type="array">
+							<id>11</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:7" type="array">
+							<id>7</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:13" type="array">
+							<id>13</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:10" type="array">
+							<id>10</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:5" type="array">
+							<id>5</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:1" type="array">
+							<id>1</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="15" type="array">
+					<uid>15</uid>
+					<pid>0</pid>
+					<title>[ROLE] Editor / Language (All) / Root </title>
+					<relations index="rels" type="array">
+						<element index="be_groups:16" type="array">
+							<id>16</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:2" type="array">
+							<id>2</id>
+							<table>be_groups</table>
+						</element>
+						<element index="be_groups:3" type="array">
+							<id>3</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="14" type="array">
+					<uid>14</uid>
+					<pid>0</pid>
+					<title>[CORE] Content (Read)</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="13" type="array">
+					<uid>13</uid>
+					<pid>0</pid>
+					<title>[CORE] Content (Write)</title>
+					<relations index="rels" type="array">
+						<element index="be_groups:14" type="array">
+							<id>14</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="12" type="array">
+					<uid>12</uid>
+					<pid>0</pid>
+					<title>[CORE] Files</title>
+					<relations index="rels" type="array">
+						<element index="sys_filemounts:1" type="array">
+							<id>1</id>
+							<table>sys_filemounts</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="11" type="array">
+					<uid>11</uid>
+					<pid>0</pid>
+					<title>[CORE] Forms (Read+Write)</title>
+					<relations index="rels" type="array">
+						<element index="sys_filemounts:2" type="array">
+							<id>2</id>
+							<table>sys_filemounts</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="10" type="array">
+					<uid>10</uid>
+					<pid>0</pid>
+					<title>[CORE] Help</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="9" type="array">
+					<uid>9</uid>
+					<pid>0</pid>
+					<title>[CORE] Pages (Read)</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="8" type="array">
+					<uid>8</uid>
+					<pid>0</pid>
+					<title>[CORE] Pages (Write)</title>
+					<relations index="rels" type="array">
+						<element index="be_groups:9" type="array">
+							<id>9</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="7" type="array">
+					<uid>7</uid>
+					<pid>0</pid>
+					<title>[CORE] User Configuration</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="6" type="array">
+					<uid>6</uid>
+					<pid>0</pid>
+					<title>[CORE] Workspace</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="5" type="array">
+					<uid>5</uid>
+					<pid>0</pid>
+					<title>[CORE] Workspace / Live</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="4" type="array">
+					<uid>4</uid>
+					<pid>0</pid>
+					<title>[LANG] Limit to Default</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="3" type="array">
+					<uid>3</uid>
+					<pid>0</pid>
+					<title>[MOUNT] Root Default Page</title>
+					<relations index="rels" type="array">
+						<element index="pages:1" type="array">
+							<id>1</id>
+							<table>pages</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="2" type="array">
+					<uid>2</uid>
+					<pid>0</pid>
+					<title>[ACCESS] Configuration</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="1" type="array">
+					<uid>1</uid>
+					<pid>0</pid>
+					<title>[ACCESS] Default</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+
+			</table>
+			<table index="be_users" type="array">
+				<rec index="3" type="array">
+					<uid>3</uid>
+					<pid>0</pid>
+					<title>client</title>
+					<relations index="rels" type="array">
+						<element index="be_groups:15" type="array">
+							<id>15</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+			<table index="sys_filemounts" type="array">
+				<rec index="2" type="array">
+					<uid>2</uid>
+					<pid>0</pid>
+					<title>Forms for Editors</title>
+					<relations index="rels" type="array">
+						<element index="sys_file_storage:1" type="array">
+							<id>1</id>
+							<table>sys_file_storage</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="1" type="array">
+					<uid>1</uid>
+					<pid>0</pid>
+					<title>Files for Editors</title>
+					<relations index="rels" type="array">
+						<element index="sys_file_storage:1" type="array">
+							<id>1</id>
+							<table>sys_file_storage</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+			<table index="pages" type="array">
+				<rec index="1" type="array">
+					<uid>1</uid>
+					<pid>0</pid>
+					<title>Company Name - Start</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array">
+						<softref_element index="tsconfig_includes:ext_fileref:2" type="array">
+							<field>tsconfig_includes</field>
+							<spKey>ext_fileref</spKey>
+							<matchString>EXT:template_site1/Configuration/TsConfig/Page.tsconfig</matchString>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="2" type="array">
+					<uid>2</uid>
+					<pid>1</pid>
+					<title>Storage</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="3" type="array">
+					<uid>3</uid>
+					<pid>2</pid>
+					<title>Metamenu</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="4" type="array">
+					<uid>4</uid>
+					<pid>1</pid>
+					<title>404</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="5" type="array">
+					<uid>5</uid>
+					<pid>1</pid>
+					<title>Kitchen Sink</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+			<table index="sys_template" type="array">
+				<rec index="1" type="array">
+					<uid>1</uid>
+					<pid>1</pid>
+					<title>Template</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array">
+						<softref_element index="include_static_file:ext_fileref:2" type="array">
+							<field>include_static_file</field>
+							<spKey>ext_fileref</spKey>
+							<matchString>EXT:template_site1/Configuration/TypoScript/Setup</matchString>
+						</softref_element>
+					</softrefs>
+				</rec>
+			</table>
+			<table index="sys_file_storage" type="array">
+				<rec index="1" type="array">
+					<uid>1</uid>
+					<pid>0</pid>
+					<title>fileadmin/ (auto-created)</title>
+					<relationLevel>1</relationLevel>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+		</records>
+		<pid_lookup type="array">
+			<page_contents index="0" type="array">
+				<table index="be_groups" type="array">
+					<item index="2">1</item>
+					<item index="1">1</item>
+					<item index="14">1</item>
+					<item index="13">1</item>
+					<item index="12">1</item>
+					<item index="11">1</item>
+					<item index="10">1</item>
+					<item index="9">1</item>
+					<item index="8">1</item>
+					<item index="7">1</item>
+					<item index="6">1</item>
+					<item index="5">1</item>
+					<item index="4">1</item>
+					<item index="3">1</item>
+					<item index="16">1</item>
+					<item index="15">1</item>
+				</table>
+				<table index="be_users" type="array">
+					<item index="3">1</item>
+				</table>
+				<table index="sys_filemounts" type="array">
+					<item index="2">1</item>
+					<item index="1">1</item>
+				</table>
+				<table index="pages" type="array">
+					<item index="1">1</item>
+				</table>
+				<table index="sys_file_storage" type="array">
+					<item index="1">1</item>
+				</table>
+			</page_contents>
+			<page_contents index="1" type="array">
+				<table index="sys_template" type="array">
+					<item index="1">1</item>
+				</table>
+				<table index="pages" type="array">
+					<item index="2">1</item>
+					<item index="4">1</item>
+					<item index="5">1</item>
+				</table>
+			</page_contents>
+			<page_contents index="2" type="array">
+				<table index="pages" type="array">
+					<item index="3">1</item>
+				</table>
+			</page_contents>
+		</pid_lookup>
+	</header>
+	<records type="array">
+		<tablerow index="be_groups:2" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">2</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[ACCESS] Configuration</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:1" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">1</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[ACCESS] Default</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:14" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">14</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Content (Read)</field>
+				<field index="non_exclude_fields">tt_content:imageborder,tt_content:categories,tt_content:image_zoom,tt_content:imagecols,tt_content:date,tt_content:rowDescription,tt_content:imageheight,tt_content:sectionIndex,tt_content:layout,tt_content:header_link,tt_content:imageorient,tt_content:starttime,tt_content:endtime,tt_content:subheader,tt_content:linkToTop,tt_content:l18n_parent,tt_content:header_layout,tt_content:bullets_type,tt_content:table_tfoot,tt_content:hidden,tt_content:imagewidth</field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select">tt_content,sys_note</field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:13" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">13</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Content (Write)</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify">tt_content,sys_note</field>
+				<field index="groupMods">web_RecyclerRecycler</field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup">14</field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="subgroup" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>14</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_groups:12" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">12</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Files</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify">sys_file</field>
+				<field index="groupMods">file_FilelistList</field>
+				<field index="file_mountpoints">1</field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="file_mountpoints" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>1</id>
+							<table>sys_filemounts</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_groups:11" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">11</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Forms (Read+Write)</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods">web_FormFormbuilder</field>
+				<field index="file_mountpoints">2</field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="file_mountpoints" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>2</id>
+							<table>sys_filemounts</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_groups:10" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">10</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Help</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods">help_cshmanual</field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:9" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">9</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Pages (Read)</field>
+				<field index="non_exclude_fields">pages:backend_layout_next_level,pages:backend_layout,pages:description,pages:media,pages:extendToSubpages,pages:layout,pages:l18n_cfg,pages:mount_pid_ol,pages:nav_title,pages:nav_hide,pages:hidden,pages:shortcut_mode,pages:content_from_pid,pages:starttime,pages:endtime,pages:subtitle,pages:target,pages:l10n_parent,pages:doktype,pages:slug</field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select">pages,sys_category</field>
+				<field index="tables_modify"></field>
+				<field index="groupMods">web_layout,web_list</field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:8" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">8</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Pages (Write)</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select">1,6,4,7,3,254,255,199</field>
+				<field index="tables_select"></field>
+				<field index="tables_modify">pages,sys_category</field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup">9</field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="subgroup" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>9</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_groups:7" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">7</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] User Configuration</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods">user_setup</field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:6" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">6</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Workspace</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:5" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">5</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[CORE] Workspace / Live</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">1</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:4" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">4</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[LANG] Limit to Default</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages">0</field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="be_groups:3" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">3</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[MOUNT] Root Default Page</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints">1</field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup"></field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="db_mountpoints" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>1</id>
+							<table>pages</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_groups:16" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">16</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[ROLE] Editor (Abstract)</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig">&lt;INCLUDE_TYPOSCRIPT: source=&quot;FILE:EXT:template/Configuration/TsConfig/User/editor-default.tsconfig&quot;&gt;</field>
+				<field index="subgroup">8,12,11,7,13,10,5,1</field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="subgroup" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>8</id>
+							<table>be_groups</table>
+						</element>
+						<element index="1" type="array">
+							<id>12</id>
+							<table>be_groups</table>
+						</element>
+						<element index="2" type="array">
+							<id>11</id>
+							<table>be_groups</table>
+						</element>
+						<element index="3" type="array">
+							<id>7</id>
+							<table>be_groups</table>
+						</element>
+						<element index="4" type="array">
+							<id>13</id>
+							<table>be_groups</table>
+						</element>
+						<element index="5" type="array">
+							<id>10</id>
+							<table>be_groups</table>
+						</element>
+						<element index="6" type="array">
+							<id>5</id>
+							<table>be_groups</table>
+						</element>
+						<element index="7" type="array">
+							<id>1</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_groups:15" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">15</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507274</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="description"></field>
+				<field index="title">[ROLE] Editor / Language (All) / Root Default Page</field>
+				<field index="non_exclude_fields"></field>
+				<field index="explicit_allowdeny"></field>
+				<field index="allowed_languages"></field>
+				<field index="custom_options"></field>
+				<field index="db_mountpoints"></field>
+				<field index="pagetypes_select"></field>
+				<field index="tables_select"></field>
+				<field index="tables_modify"></field>
+				<field index="groupMods"></field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="lockToDomain"></field>
+				<field index="TSconfig"></field>
+				<field index="subgroup">16,2,3</field>
+				<field index="workspace_perms" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="subgroup" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>16</id>
+							<table>be_groups</table>
+						</element>
+						<element index="1" type="array">
+							<id>2</id>
+							<table>be_groups</table>
+						</element>
+						<element index="2" type="array">
+							<id>3</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="be_users:3" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">3</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="disable" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="description"></field>
+				<field index="username">client</field>
+				<field index="avatar" type="integer">0</field>
+				<field index="password">$argon2i$v=19$m=16384,t=16,p=2$WHl4U21ENHkuL3FnMjFoWA$baa/VaKZuK+COczf+9qq/tJpVySR7XtmmvpYdyAQYXQ</field>
+				<field index="admin" type="integer">0</field>
+				<field index="usergroup">15</field>
+				<field index="lang"></field>
+				<field index="email"></field>
+				<field index="db_mountpoints"></field>
+				<field index="options" type="integer">3</field>
+				<field index="realName"></field>
+				<field index="userMods"></field>
+				<field index="allowed_languages"></field>
+				<field index="uc">a:14:{s:14:&quot;interfaceSetup&quot;;s:0:&quot;&quot;;s:10:&quot;moduleData&quot;;a:1:{s:10:&quot;web_layout&quot;;a:2:{s:8:&quot;function&quot;;s:1:&quot;1&quot;;s:8:&quot;language&quot;;s:1:&quot;0&quot;;}}s:19:&quot;thumbnailsByDefault&quot;;i:1;s:14:&quot;emailMeAtLogin&quot;;i:0;s:11:&quot;startModule&quot;;s:15:&quot;help_AboutAbout&quot;;s:8:&quot;titleLen&quot;;i:50;s:8:&quot;edit_RTE&quot;;s:1:&quot;1&quot;;s:20:&quot;edit_docModuleUpload&quot;;s:1:&quot;1&quot;;s:15:&quot;resizeTextareas&quot;;i:1;s:25:&quot;resizeTextareas_MaxHeight&quot;;i:500;s:24:&quot;resizeTextareas_Flexible&quot;;i:0;s:4:&quot;lang&quot;;s:0:&quot;&quot;;s:19:&quot;firstLoginTimeStamp&quot;;i:1543507236;s:15:&quot;moduleSessionID&quot;;a:1:{s:10:&quot;web_layout&quot;;s:32:&quot;bc642ed706735925769d1b4973840528&quot;;}}</field>
+				<field index="file_mountpoints"></field>
+				<field index="file_permissions">readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile</field>
+				<field index="workspace_perms" type="integer">1</field>
+				<field index="lockToDomain"></field>
+				<field index="disableIPlock" type="integer">0</field>
+				<field index="TSconfig"></field>
+				<field index="lastlogin" type="integer">1543501047</field>
+				<field index="createdByAction" type="integer">0</field>
+				<field index="usergroup_cached_list">9,8,12,11,7,14,13,10,5,1,16,2,3,15</field>
+				<field index="workspace_id" type="integer">0</field>
+				<field index="category_perms"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="usergroup" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>15</id>
+							<table>be_groups</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="sys_filemounts:2" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">2</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="sorting" type="integer">128</field>
+				<field index="description"></field>
+				<field index="title">Forms for Editors</field>
+				<field index="path">/template/form_definitions/</field>
+				<field index="base" type="integer">1</field>
+				<field index="read_only" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="base" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>1</id>
+							<table>sys_file_storage</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="sys_filemounts:1" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">1</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="sorting" type="integer">256</field>
+				<field index="description"></field>
+				<field index="title">Files for Editors</field>
+				<field index="path">/user_upload/</field>
+				<field index="base" type="integer">1</field>
+				<field index="read_only" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="base" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>1</id>
+							<table>sys_file_storage</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="pages:1" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">1</field>
+				<field index="pid" type="integer">0</field>
+				<field index="tstamp" type="integer">1543507228</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="sorting" type="integer">256</field>
+				<field index="rowDescription" type="NULL"></field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="l10n_diffsource">a:36:{s:7:&quot;doktype&quot;;N;s:5:&quot;title&quot;;N;s:9:&quot;nav_title&quot;;N;s:8:&quot;subtitle&quot;;N;s:8:&quot;abstract&quot;;N;s:8:&quot;keywords&quot;;N;s:11:&quot;description&quot;;N;s:6:&quot;author&quot;;N;s:12:&quot;author_email&quot;;N;s:11:&quot;lastUpdated&quot;;N;s:6:&quot;layout&quot;;N;s:8:&quot;newUntil&quot;;N;s:14:&quot;backend_layout&quot;;N;s:25:&quot;backend_layout_next_level&quot;;N;s:16:&quot;content_from_pid&quot;;N;s:6:&quot;target&quot;;N;s:13:&quot;cache_timeout&quot;;N;s:10:&quot;cache_tags&quot;;N;s:11:&quot;is_siteroot&quot;;N;s:9:&quot;no_search&quot;;N;s:13:&quot;php_tree_stop&quot;;N;s:6:&quot;module&quot;;N;s:5:&quot;media&quot;;N;s:17:&quot;tsconfig_includes&quot;;N;s:8:&quot;TSconfig&quot;;N;s:8:&quot;l18n_cfg&quot;;N;s:6:&quot;hidden&quot;;N;s:8:&quot;nav_hide&quot;;N;s:9:&quot;starttime&quot;;N;s:7:&quot;endtime&quot;;N;s:16:&quot;extendToSubpages&quot;;N;s:8:&quot;fe_group&quot;;N;s:13:&quot;fe_login_mode&quot;;N;s:8:&quot;editlock&quot;;N;s:10:&quot;categories&quot;;N;s:14:&quot;rowDescription&quot;;N;}</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="perms_userid" type="integer">2</field>
+				<field index="perms_groupid" type="integer">1</field>
+				<field index="perms_user" type="integer">31</field>
+				<field index="perms_group" type="integer">27</field>
+				<field index="perms_everybody" type="integer">0</field>
+				<field index="title">Company Name - Start</field>
+				<field index="slug">/</field>
+				<field index="doktype" type="integer">1</field>
+				<field index="TSconfig" type="NULL"></field>
+				<field index="is_siteroot" type="integer">1</field>
+				<field index="php_tree_stop" type="integer">0</field>
+				<field index="url"></field>
+				<field index="shortcut" type="integer">0</field>
+				<field index="shortcut_mode" type="integer">0</field>
+				<field index="subtitle"></field>
+				<field index="layout" type="integer">0</field>
+				<field index="target"></field>
+				<field index="media" type="integer">0</field>
+				<field index="lastUpdated" type="integer">0</field>
+				<field index="keywords" type="NULL"></field>
+				<field index="cache_timeout" type="integer">0</field>
+				<field index="cache_tags"></field>
+				<field index="newUntil" type="integer">0</field>
+				<field index="description" type="NULL"></field>
+				<field index="no_search" type="integer">0</field>
+				<field index="SYS_LASTCHANGED" type="integer">0</field>
+				<field index="abstract" type="NULL"></field>
+				<field index="module"></field>
+				<field index="extendToSubpages" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="nav_title"></field>
+				<field index="nav_hide" type="integer">0</field>
+				<field index="content_from_pid" type="integer">0</field>
+				<field index="mount_pid" type="integer">0</field>
+				<field index="mount_pid_ol" type="integer">0</field>
+				<field index="alias"></field>
+				<field index="l18n_cfg" type="integer">0</field>
+				<field index="fe_login_mode" type="integer">0</field>
+				<field index="backend_layout">pagets__extra_test</field>
+				<field index="backend_layout_next_level">pagets__extra_test</field>
+				<field index="tsconfig_includes">EXT:template_site1/Configuration/TsConfig/Page.tsconfig</field>
+				<field index="legacy_overlay_uid" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">1</field>
+				<field index="seo_title"></field>
+				<field index="no_index" type="integer">0</field>
+				<field index="no_follow" type="integer">0</field>
+				<field index="og_title"></field>
+				<field index="og_description" type="NULL"></field>
+				<field index="og_image" type="integer">0</field>
+				<field index="twitter_title"></field>
+				<field index="twitter_description" type="NULL"></field>
+				<field index="twitter_image" type="integer">0</field>
+				<field index="canonical_link"></field>
+				<field index="categories" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="tsconfig_includes" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="ext_fileref" type="array">
+								<softref_element index="2" type="array">
+									<matchString>EXT:template_site1/Configuration/TsConfig/Page.tsconfig</matchString>
+								</softref_element>
+							</softref_key>
+						</keys>
+					</softrefs>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="sys_template:1" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">1</field>
+				<field index="pid" type="integer">1</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="sorting" type="integer">256</field>
+				<field index="description" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="title">Template</field>
+				<field index="sitetitle"></field>
+				<field index="root" type="integer">1</field>
+				<field index="clear" type="integer">3</field>
+				<field index="include_static_file">EXT:template_site1/Configuration/TypoScript/Setup</field>
+				<field index="constants" type="NULL"></field>
+				<field index="config"></field>
+				<field index="nextLevel"></field>
+				<field index="basedOn"></field>
+				<field index="includeStaticAfterBasedOn" type="integer">0</field>
+				<field index="static_file_mode" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">1</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="include_static_file" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="ext_fileref" type="array">
+								<softref_element index="2" type="array">
+									<matchString>EXT:template_site1/Configuration/TypoScript/Setup</matchString>
+								</softref_element>
+							</softref_key>
+						</keys>
+					</softrefs>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="pages:2" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">2</field>
+				<field index="pid" type="integer">1</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="sorting" type="integer">256</field>
+				<field index="rowDescription" type="NULL"></field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="l10n_diffsource">a:1:{s:6:&quot;hidden&quot;;N;}</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="perms_userid" type="integer">2</field>
+				<field index="perms_groupid" type="integer">1</field>
+				<field index="perms_user" type="integer">31</field>
+				<field index="perms_group" type="integer">27</field>
+				<field index="perms_everybody" type="integer">0</field>
+				<field index="title">Storage</field>
+				<field index="slug">/storage</field>
+				<field index="doktype" type="integer">254</field>
+				<field index="TSconfig" type="NULL"></field>
+				<field index="is_siteroot" type="integer">0</field>
+				<field index="php_tree_stop" type="integer">0</field>
+				<field index="url"></field>
+				<field index="shortcut" type="integer">0</field>
+				<field index="shortcut_mode" type="integer">0</field>
+				<field index="subtitle"></field>
+				<field index="layout" type="integer">0</field>
+				<field index="target"></field>
+				<field index="media" type="integer">0</field>
+				<field index="lastUpdated" type="integer">0</field>
+				<field index="keywords" type="NULL"></field>
+				<field index="cache_timeout" type="integer">0</field>
+				<field index="cache_tags"></field>
+				<field index="newUntil" type="integer">0</field>
+				<field index="description" type="NULL"></field>
+				<field index="no_search" type="integer">0</field>
+				<field index="SYS_LASTCHANGED" type="integer">0</field>
+				<field index="abstract" type="NULL"></field>
+				<field index="module"></field>
+				<field index="extendToSubpages" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="nav_title"></field>
+				<field index="nav_hide" type="integer">0</field>
+				<field index="content_from_pid" type="integer">0</field>
+				<field index="mount_pid" type="integer">0</field>
+				<field index="mount_pid_ol" type="integer">0</field>
+				<field index="alias"></field>
+				<field index="l18n_cfg" type="integer">0</field>
+				<field index="fe_login_mode" type="integer">0</field>
+				<field index="backend_layout"></field>
+				<field index="backend_layout_next_level"></field>
+				<field index="tsconfig_includes"></field>
+				<field index="legacy_overlay_uid" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">2</field>
+				<field index="seo_title"></field>
+				<field index="no_index" type="integer">0</field>
+				<field index="no_follow" type="integer">0</field>
+				<field index="og_title"></field>
+				<field index="og_description" type="NULL"></field>
+				<field index="og_image" type="integer">0</field>
+				<field index="twitter_title"></field>
+				<field index="twitter_description" type="NULL"></field>
+				<field index="twitter_image" type="integer">0</field>
+				<field index="canonical_link"></field>
+				<field index="categories" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="pages:3" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">3</field>
+				<field index="pid" type="integer">2</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="sorting" type="integer">256</field>
+				<field index="rowDescription" type="NULL"></field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="l10n_diffsource">a:1:{s:6:&quot;hidden&quot;;N;}</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="perms_userid" type="integer">2</field>
+				<field index="perms_groupid" type="integer">1</field>
+				<field index="perms_user" type="integer">31</field>
+				<field index="perms_group" type="integer">27</field>
+				<field index="perms_everybody" type="integer">0</field>
+				<field index="title">Metamenu</field>
+				<field index="slug">/metamenu</field>
+				<field index="doktype" type="integer">254</field>
+				<field index="TSconfig" type="NULL"></field>
+				<field index="is_siteroot" type="integer">0</field>
+				<field index="php_tree_stop" type="integer">0</field>
+				<field index="url"></field>
+				<field index="shortcut" type="integer">0</field>
+				<field index="shortcut_mode" type="integer">0</field>
+				<field index="subtitle"></field>
+				<field index="layout" type="integer">0</field>
+				<field index="target"></field>
+				<field index="media" type="integer">0</field>
+				<field index="lastUpdated" type="integer">0</field>
+				<field index="keywords" type="NULL"></field>
+				<field index="cache_timeout" type="integer">0</field>
+				<field index="cache_tags"></field>
+				<field index="newUntil" type="integer">0</field>
+				<field index="description" type="NULL"></field>
+				<field index="no_search" type="integer">0</field>
+				<field index="SYS_LASTCHANGED" type="integer">0</field>
+				<field index="abstract" type="NULL"></field>
+				<field index="module"></field>
+				<field index="extendToSubpages" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="nav_title"></field>
+				<field index="nav_hide" type="integer">0</field>
+				<field index="content_from_pid" type="integer">0</field>
+				<field index="mount_pid" type="integer">0</field>
+				<field index="mount_pid_ol" type="integer">0</field>
+				<field index="alias"></field>
+				<field index="l18n_cfg" type="integer">0</field>
+				<field index="fe_login_mode" type="integer">0</field>
+				<field index="backend_layout"></field>
+				<field index="backend_layout_next_level"></field>
+				<field index="tsconfig_includes"></field>
+				<field index="legacy_overlay_uid" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">3</field>
+				<field index="seo_title"></field>
+				<field index="no_index" type="integer">0</field>
+				<field index="no_follow" type="integer">0</field>
+				<field index="og_title"></field>
+				<field index="og_description" type="NULL"></field>
+				<field index="og_image" type="integer">0</field>
+				<field index="twitter_title"></field>
+				<field index="twitter_description" type="NULL"></field>
+				<field index="twitter_image" type="integer">0</field>
+				<field index="canonical_link"></field>
+				<field index="categories" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="pages:4" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">4</field>
+				<field index="pid" type="integer">1</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="sorting" type="integer">128</field>
+				<field index="rowDescription" type="NULL"></field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="l10n_diffsource">a:1:{s:6:&quot;hidden&quot;;N;}</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="perms_userid" type="integer">2</field>
+				<field index="perms_groupid" type="integer">1</field>
+				<field index="perms_user" type="integer">31</field>
+				<field index="perms_group" type="integer">27</field>
+				<field index="perms_everybody" type="integer">0</field>
+				<field index="title">404</field>
+				<field index="slug">/404</field>
+				<field index="doktype" type="integer">1</field>
+				<field index="TSconfig" type="NULL"></field>
+				<field index="is_siteroot" type="integer">0</field>
+				<field index="php_tree_stop" type="integer">0</field>
+				<field index="url"></field>
+				<field index="shortcut" type="integer">0</field>
+				<field index="shortcut_mode" type="integer">0</field>
+				<field index="subtitle"></field>
+				<field index="layout" type="integer">0</field>
+				<field index="target"></field>
+				<field index="media" type="integer">0</field>
+				<field index="lastUpdated" type="integer">0</field>
+				<field index="keywords" type="NULL"></field>
+				<field index="cache_timeout" type="integer">0</field>
+				<field index="cache_tags"></field>
+				<field index="newUntil" type="integer">0</field>
+				<field index="description" type="NULL"></field>
+				<field index="no_search" type="integer">0</field>
+				<field index="SYS_LASTCHANGED" type="integer">0</field>
+				<field index="abstract" type="NULL"></field>
+				<field index="module"></field>
+				<field index="extendToSubpages" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="nav_title"></field>
+				<field index="nav_hide" type="integer">0</field>
+				<field index="content_from_pid" type="integer">0</field>
+				<field index="mount_pid" type="integer">0</field>
+				<field index="mount_pid_ol" type="integer">0</field>
+				<field index="alias"></field>
+				<field index="l18n_cfg" type="integer">0</field>
+				<field index="fe_login_mode" type="integer">0</field>
+				<field index="backend_layout"></field>
+				<field index="backend_layout_next_level"></field>
+				<field index="tsconfig_includes"></field>
+				<field index="legacy_overlay_uid" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">4</field>
+				<field index="seo_title"></field>
+				<field index="no_index" type="integer">0</field>
+				<field index="no_follow" type="integer">0</field>
+				<field index="og_title"></field>
+				<field index="og_description" type="NULL"></field>
+				<field index="og_image" type="integer">0</field>
+				<field index="twitter_title"></field>
+				<field index="twitter_description" type="NULL"></field>
+				<field index="twitter_image" type="integer">0</field>
+				<field index="canonical_link"></field>
+				<field index="categories" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="pages:5" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">5</field>
+				<field index="pid" type="integer">1</field>
+				<field index="tstamp" type="integer">1543507175</field>
+				<field index="crdate" type="integer">1543507175</field>
+				<field index="cruser_id" type="integer">2</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="sorting" type="integer">64</field>
+				<field index="rowDescription" type="NULL"></field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="l10n_diffsource">a:1:{s:6:&quot;hidden&quot;;N;}</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="perms_userid" type="integer">2</field>
+				<field index="perms_groupid" type="integer">1</field>
+				<field index="perms_user" type="integer">31</field>
+				<field index="perms_group" type="integer">27</field>
+				<field index="perms_everybody" type="integer">0</field>
+				<field index="title">Kitchen Sink</field>
+				<field index="slug">/kitchen-sink</field>
+				<field index="doktype" type="integer">1</field>
+				<field index="TSconfig" type="NULL"></field>
+				<field index="is_siteroot" type="integer">0</field>
+				<field index="php_tree_stop" type="integer">0</field>
+				<field index="url"></field>
+				<field index="shortcut" type="integer">0</field>
+				<field index="shortcut_mode" type="integer">0</field>
+				<field index="subtitle"></field>
+				<field index="layout" type="integer">0</field>
+				<field index="target"></field>
+				<field index="media" type="integer">0</field>
+				<field index="lastUpdated" type="integer">0</field>
+				<field index="keywords" type="NULL"></field>
+				<field index="cache_timeout" type="integer">0</field>
+				<field index="cache_tags"></field>
+				<field index="newUntil" type="integer">0</field>
+				<field index="description" type="NULL"></field>
+				<field index="no_search" type="integer">0</field>
+				<field index="SYS_LASTCHANGED" type="integer">0</field>
+				<field index="abstract" type="NULL"></field>
+				<field index="module"></field>
+				<field index="extendToSubpages" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="nav_title"></field>
+				<field index="nav_hide" type="integer">0</field>
+				<field index="content_from_pid" type="integer">0</field>
+				<field index="mount_pid" type="integer">0</field>
+				<field index="mount_pid_ol" type="integer">0</field>
+				<field index="alias"></field>
+				<field index="l18n_cfg" type="integer">0</field>
+				<field index="fe_login_mode" type="integer">0</field>
+				<field index="backend_layout"></field>
+				<field index="backend_layout_next_level"></field>
+				<field index="tsconfig_includes"></field>
+				<field index="legacy_overlay_uid" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">5</field>
+				<field index="seo_title"></field>
+				<field index="no_index" type="integer">0</field>
+				<field index="no_follow" type="integer">0</field>
+				<field index="og_title"></field>
+				<field index="og_description" type="NULL"></field>
+				<field index="og_image" type="integer">0</field>
+				<field index="twitter_title"></field>
+				<field index="twitter_description" type="NULL"></field>
+				<field index="twitter_image" type="integer">0</field>
+				<field index="canonical_link"></field>
+				<field index="categories" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="sys_file_storage:1" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid">1</field>
+				<field index="pid">0</field>
+				<field index="tstamp">1543507175</field>
+				<field index="crdate">1543507175</field>
+				<field index="cruser_id">0</field>
+				<field index="deleted">0</field>
+				<field index="description">This is the local fileadmin/ directory. This storage mount has been created automatically by TYPO3.</field>
+				<field index="name">fileadmin/ (auto-created)</field>
+				<field index="driver">Local</field>
+				<field index="configuration">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot; ?&gt;
+&lt;T3FlexForms&gt;
+    &lt;data&gt;
+        &lt;sheet index=&quot;sDEF&quot;&gt;
+            &lt;language index=&quot;lDEF&quot;&gt;
+                &lt;field index=&quot;basePath&quot;&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;fileadmin/&lt;/value&gt;
+                &lt;/field&gt;
+                &lt;field index=&quot;pathType&quot;&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;relative&lt;/value&gt;
+                &lt;/field&gt;
+                &lt;field index=&quot;caseSensitive&quot;&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;&lt;/value&gt;
+                &lt;/field&gt;
+            &lt;/language&gt;
+        &lt;/sheet&gt;
+    &lt;/data&gt;
+&lt;/T3FlexForms&gt;</field>
+				<field index="is_default">1</field>
+				<field index="is_browsable">1</field>
+				<field index="is_public">1</field>
+				<field index="is_writable">1</field>
+				<field index="is_online">1</field>
+				<field index="auto_extract_metadata">1</field>
+				<field index="processingfolder" type="NULL"></field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="configuration" type="array">
+					<type>flex</type>
+					<flexform index="flexFormRels" type="array">
+						<db_relations index="db" type="array"></db_relations>
+						<file_relations index="file" type="array"></file_relations>
+						<softref_relations index="softrefs" type="array"></softref_relations>
+					</flexform>
+				</field>
+			</related>
+		</tablerow>
+	</records>
+</T3RecordDocument>

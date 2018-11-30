@@ -1,0 +1,70 @@
+
+#######################################################################################
+#
+#                                       admPanel
+#                    Options regarding the frontend admin panel.
+#
+########################################################################################
+admPanel {
+  enable.edit = 1
+  enable.preview = 1
+  hide = 0
+  preview = 1
+}
+
+########################################################################################
+#
+#                                       options
+#                         Options for the user, various
+#
+########################################################################################
+options {
+  pageTree {
+    showPageIdWithTitle = 0
+    showDomainNameWithTitle = 1
+    showNavTitle = 1
+    separateNotinmenuPages = 1
+    disableIconLinkToContextmenu = titlelink
+  }
+  file_list {
+    enableDisplayBigControlPanel = activated
+    enableDisplayThumbnails = selectable
+  }
+  clearCache {
+    pages = 1
+    system = 0
+    all = 0
+  }
+  shortcutFrame = 0
+  showHistory = 1
+  clipboardNumberPads = 1
+  enableBookmarks = 1
+  moduleMenuCollapsable = 0
+  #RTEkeyList = bold, italic, chMode, orderedlist, unorderedlist, paste, removeformat, formatblock, insertcharacter, line, link, unlink
+}
+
+
+########################################################################################
+#
+#                                          mod
+#                Overriding values for the backend modules
+#
+########################################################################################
+
+
+########################################################################################
+#
+#                                         setup
+#	Default values and override values for the user settings known from the setup module
+#
+########################################################################################
+
+
+########################################################################################
+#
+#                                      tx_[extension]
+#                      This is reserved space for extensions.
+#
+########################################################################################
+
+

@@ -1,0 +1,87 @@
+lib.menu-test = COA
+lib.menu-test {
+    wrap = <ol class="menu-main__list">|</ol>
+    10 = HMENU
+    10 {
+        special = list
+        special.value = 1
+        1 = TMENU
+        1 {
+            NO = 1
+            NO {
+                wrapItemAndSub = <li>|
+                #stdWrap.wrap = |&nbsp; <span class="secondary label">{field:uid}</span>
+                #stdWrap.wrap.insertData = 1
+                ATagParams = class="menu-main__link"
+            }
+            CUR = 1
+            CUR < .NO
+            CUR {
+                ATagParams = class="menu-main__link menu-main__link--cur"
+            }
+        }
+    }
+
+    20 = HMENU
+    20 {
+        wrap = <ol class="menu-main__list menu-main__list--counter">|</ol></li>
+        1 = TMENU
+        1 {
+            expAll = 1
+            NO = 1
+            NO {
+                wrapItemAndSub = <li>|</li>
+                doNotLinkIt = 1
+
+                stdWrap.cObject = CASE
+                stdWrap.cObject {
+                    key.field = doktype
+                    default = TEXT
+                    default {
+                        field = title
+                        typolink {
+                            ATagParams = class="menu-main__link"
+                            parameter {
+                                data = field:uid
+                            }
+                        }
+                    }
+
+                    3 < .default
+                    3 {
+                        stdWrap.htmlSpecialChars = 1
+                        typolink {
+                            ATagParams = class="menu-main__link menu-main__link--external no-SmoothState"
+                            parameter {
+                                data >
+                                dataWrap = http://{field:url}
+                            }
+                        }
+                    }
+                }
+            }
+            CUR = 1
+            CUR {
+                wrapItemAndSub = <li>|</li>
+                ATagParams = class="menu-main__link menu-main__link--cur"
+            }
+
+            ACT = 1
+            ACT {
+                wrapItemAndSub = <li>|</li>
+                ATagParams = class="menu-main__link menu-main__link--act"
+            }
+        }
+        2 < .1
+        2.wrap = <ol class="menu-main__list menu-main__list--counter">|</ol>
+        3 < .2
+        4 < .2
+    }
+
+}
+
+
+
+
+
+
