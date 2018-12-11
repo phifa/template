@@ -7,7 +7,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_email' => '',
     'author_company' => '',
     'shy' => '',
-    'version' => '9.3',
+    'version' => '9.5',
     'priority' => '',
     'module' => '',
     'state' => 'stable',
@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = array(
     'lockType' => '',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '9.3.0-9.99.99',
+            'typo3' => '9.5.0-9.99.99',
         ),
         'conflicts' => array(
         ),
