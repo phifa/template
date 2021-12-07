@@ -4,5 +4,10 @@
   "description": "TYPO3 Base Template. Use with template_site1 extension.",
   "require": {
     "typo3/minimal": ">=9.5"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "template"
+    }
   }
 }
